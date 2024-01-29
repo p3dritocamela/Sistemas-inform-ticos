@@ -1,0 +1,42 @@
+# Ejercicio 1
+git config --global user.name "nombre de usuario" // Establece el nombre de usuario en Git.
+git config --global user.email "nombre del correo" // Asigna el correo electrónico en Git.
+git config --global color.ui auto // Configura los colores en Git de manera automática.
+git config --list // Muestra la configuración final.
+
+# Ejercicio 2
+mkdir libro // Crea la carpeta "libro".
+cd libro // Ingresa a la carpeta "libro".
+git init // Inicia el directorio actual ("libro" en este caso) como un repositorio Git.
+ls -la // Muestra todo el contenido del directorio "libro" en este caso.
+
+# Ejercicio 3
+git status // Verifica el estado del repositorio "libro".
+cat > indice.txt // Genera el fichero "indice.txt" con el siguiente contenido.
+Capítulo 1: Introducción a Git // Contenido de "indice.txt".
+Capítulo 2: Flujo de trabajo básico // Contenido de "indice.txt".
+Capítulo 3: Repositorios remotos // Contenido de "indice.txt".
+Ctrl+D // Atajo de teclado para salir y guardar el fichero.
+git status // Verifica el estado del repositorio "libro".
+git add indice.txt // Agrega el fichero "indice.txt" a la zona de intercambio temporal.
+git status // Verifica el estado del repositorio "libro".
+
+# Ejercicio 4
+git commit -m "Añadido índice del libro." // Realiza un commit de los últimos cambios con el mensaje especificado.
+git status // Verifica el estado del repositorio "libro".
+
+# Ejercicio 5
+cat > indice.txt // Modifica el fichero indice.txt para que contenga el siguiente contenido.
+Capítulo 1: Introducción a Git // Contenido cambiado en "indice.txt".
+Capítulo 2: Flujo de trabajo básico // Contenido cambiado en "indice.txt".
+Capítulo 3: Gestión de ramas // Contenido cambiado en "indice.txt".
+Capítulo 4: Repositorios remotos // Contenido cambiado en "indice.txt".
+Ctrl+D // Atajo de teclado para salir y guardar el fichero.
+git diff // Muestra las diferencias con respecto a la última versión guardada en el repositorio.
+git add indice.txt // Añade el fichero "indice.txt" a la zona de intercambio temporal.
+git commit -m "Añadido capítulo 3 sobre gestión de ramas" // Realiza un commit de los cambios con el mensaje especificado.
+
+# Ejercicio 6
+git show // Muestra los cambios de la última versión del repositorio en comparación con la anterior.
+git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice." // Modifica el mensaje del último commit por este.
+git show // Muestra los últimos cambios del repositorio.

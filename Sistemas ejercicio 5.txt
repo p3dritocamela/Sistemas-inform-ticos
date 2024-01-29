@@ -1,0 +1,37 @@
+# Ejercicio 1
+git status //Verifica el estado actual del repositorio.
+git checkout -- indice.txt //Deshace los cambios realizados en el archivo "indice.txt".
+git status //Vuelve a verificar el estado del repositorio.
+
+# Ejercicio 2
+git add . //Agrega los cambios al área de preparación.
+git status //Verifica el estado actual del repositorio.
+git reset indice.txt //Desvincula los cambios agregados, pero los mantiene en el directorio de trabajo.
+git status //Vuelve a verificar el estado del repositorio.
+git checkout -- indice.txt //Deshace los cambios realizados en el archivo "indice.txt".
+git status //Vuelve a verificar el estado del repositorio.
+
+# Ejercicio 3
+del capitulos\capitulo3.txt //Elimina el archivo "capitulos/capitulo3.txt".
+echo. > capitulos\capitulo4.txt //Añade el archivo "capitulos\capitulo4.txt" vacío.
+git add . //Agrega los cambios al área de preparación.
+git status //Verifica el estado actual del repositorio.
+git reset //Desvincula todos los cambios agregados.
+git status //Vuelve a verificar el estado del repositorio.
+git checkout -- . //Deshace todos los cambios realizados.
+git status //Vuelve a verificar el estado del repositorio.
+
+# Ejercicio 4
+del capitulos\capitulo3.txt //Elimina el archivo "capitulos\capitulo3.txt".
+git commit -am "Borrado accidental." //Agrega los cambios y realiza un commit con este mensaje.
+git log //Muestra el historial del repositorio.
+git reset --soft HEAD~1 //Deshace el último commit, pero conserva los cambios anteriores en el directorio de trabajo.
+git log //Muestra el historial del repositorio.
+git status //Muestra el estado actual del repositorio.
+git commit -m "Borrado accidental."
+git reset --hard HEAD~1 //Deshace el último commit y los cambios anteriores, volviendo a la versión anterior del repositorio.
+git log //Muestra el historial del repositorio.
+git status //Muestra el estado actual del repositorio.
+
+
+
